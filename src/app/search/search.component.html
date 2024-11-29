@@ -22,11 +22,13 @@
       <div *ngIf="!apiKey" class="api-warning">
         Please enter your API key in settings to use Browse for Me
       </div>
+
+      <button *ngIf="!apiKey" (click)="navigateSettings()" [disabled]="searching" class="search-button">
+        Settings
+      </button>
   
       <div *ngIf="searching" class="searching-text">
         Searching...
       </div>
-  
-      <!-- <div class="response-container markdown-body" [innerHTML]="searchResponse"></div> -->
     </div>
   </div>

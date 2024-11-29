@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
     font-family: 'SF Pro Rounded';
-    src: url('assets/fonts/SF-Pro-Rounded-Regular.otf') format('otf');
+    src: url('/app/assets/fonts/SF-Pro-Rounded-Regular.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }

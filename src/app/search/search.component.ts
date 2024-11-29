@@ -42,6 +42,9 @@ export class SearchComponent implements OnInit {
     });
   }
 
+  async navigateSettings() {
+    this.router.navigate(['/settings'])
+  }
   async submitSearch() {
     if (!this.searchText || this.searching) return;
     

@@ -56,6 +56,9 @@
 }
 
 .search-button {
+    display: flex;
+    margin: auto;
+    align-items: center;
     background: linear-gradient(to right, #EA96FF, #7E7DD5, #5957E5);
     color: white;
     padding: 0.8rem 2rem;
