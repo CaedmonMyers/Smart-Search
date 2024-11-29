@@ -1,0 +1,124 @@
+.container {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #EA96FF, #7E7DD5, #5957E5);
+    z-index: -1;
+}
+
+.settings-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.api-key-section {
+    margin-bottom: 2rem;
+}
+
+.label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #7E7DD5;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.save-button,
+.back-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.save-button {
+    background: linear-gradient(to right, #EA96FF, #7E7DD5);
+    color: white;
+}
+
+.back-button {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.save-button:hover,
+.back-button:hover {
+    transform: scale(1.05);
+}
+
+.success-message {
+    color: #2ecc71;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.info-section {
+    border-top: 1px solid #ddd;
+    padding-top: 1.5rem;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.instructions {
+    padding-left: 1.5rem;
+}
+
+.instructions li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.link {
+    color: #7E7DD5;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

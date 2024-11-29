@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="gradient-background"></div>
+
+    <div class="settings-container">
+        <h1 class="title">Settings</h1>
+
+        <div class="api-key-section">
+            <label class="label" for="apiKey">Perplexity API Key</label>
+            <input type="password" id="apiKey" [(ngModel)]="apiKey" placeholder="Enter your API key" class="input">
+
+            <div class="button-container">
+                <button (click)="saveApiKey()" class="save-button">
+                    Save API Key
+                </button>
+                <button (click)="goToSearch()" class="back-button">
+                    Back to Search
+                </button>
+            </div>
+
+            <div *ngIf="saved" class="success-message">
+                API key saved successfully!
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2 class="subtitle">How to get an API key:</h2>
+            <ol class="instructions">
+                <li>Go to <a href="https://www.perplexity.ai/" target="_blank" class="link">Perplexity.ai</a></li>
+                <li>Create an account or sign in</li>
+                <li>Navigate to API settings</li>
+                <li>Generate a new API key</li>
+                <li>Copy and paste it here</li>
+            </ol>
+        </div>
+    </div>
+</div>

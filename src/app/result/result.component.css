@@ -1,0 +1,43 @@
+.container {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #EA96FF, #7E7DD5, #5957E5);
+    z-index: -1;
+}
+
+.result-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.query {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.response {
+    line-height: 1.6;
+}
+
+.loading,
+.error {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+}
